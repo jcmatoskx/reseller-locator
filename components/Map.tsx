@@ -57,7 +57,8 @@ export function Map({ resellers, selectedId, onSelectReseller }: MapProps) {
   const buildPopup = useCallback((r: ResellerWithDistance) => {
     const distance = r.distance !== undefined ? formatDistance(r.distance) : null
     const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${r.lat},${r.lng}`
-    const detailUrl = `/r/${r.slug}`
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
+    const detailUrl = `${basePath}/r/${r.slug}`
     const status = getOpenStatus(r.hours)
     const statusColor = status.isOpen ? '#F9A138' : '#94A3B8'
     const todayHours = r.hours[status.todayKey]
