@@ -1,0 +1,319 @@
+[
+  {
+    "id": "pt-lisboa-techmobility",
+    "name": "TechMobility Lisboa",
+    "slug": "techmobility-lisboa",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop&auto=format&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=500&fit=crop&auto=format&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&auto=format&q=80"
+    ],
+    "countryCode": "PT",
+    "countryName": "Portugal",
+    "region": "Lisboa",
+    "city": "Lisboa",
+    "address": "Avenida da Liberdade 110, 1269-046 Lisboa",
+    "postcode": "1269-046",
+    "lat": 38.7167,
+    "lng": -9.1424,
+    "phone": "+351 21 342 8800",
+    "email": "geral@techmobility.pt",
+    "website": "https://www.techmobility.pt",
+    "hours": {
+      "mon": "09:00-18:30",
+      "tue": "09:00-18:30",
+      "wed": "09:00-18:30",
+      "thu": "09:00-18:30",
+      "fri": "09:00-18:00",
+      "sat": "10:00-14:00",
+      "sun": "Fechado"
+    },
+    "storeType": "loja",
+    "active": true
+  },
+  {
+    "id": "pt-porto-voltpower",
+    "name": "VoltPower Porto",
+    "slug": "voltpower-porto",
+    "image": "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=200&h=200&fit=crop&auto=format&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1555529771-7888783a18d3?w=800&h=500&fit=crop&auto=format&q=80",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=500&fit=crop&auto=format&q=80"
+    ],
+    "countryCode": "PT",
+    "countryName": "Portugal",
+    "region": "Porto",
+    "city": "Porto",
+    "address": "Rua de Santa Catarina 312, 4000-447 Porto",
+    "postcode": "4000-447",
+    "lat": 41.1496,
+    "lng": -8.6109,
+    "phone": "+351 22 208 5540",
+    "email": "info@voltpower.pt",
+    "website": "https://www.voltpower.pt",
+    "hours": {
+      "mon": "09:00-18:00",
+      "tue": "09:00-18:00",
+      "wed": "09:00-18:00",
+      "thu": "09:00-18:00",
+      "fri": "09:00-18:00",
+      "sat": "10:00-13:00",
+      "sun": "Fechado"
+    },
+    "storeType": "eletronica",
+    "active": true
+  },
+  {
+    "id": "pt-braga-norteenergia",
+    "name": "NorteEnergia Solutions",
+    "slug": "norteenergia-braga",
+    "image": "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=200&h=200&fit=crop&auto=format&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=500&fit=crop&auto=format&q=80",
+      "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=800&h=500&fit=crop&auto=format&q=80"
+    ],
+    "countryCode": "PT",
+    "countryName": "Portugal",
+    "region": "Braga",
+    "city": "Braga",
+    "address": "Rua do Souto 89, 4700-240 Braga",
+    "postcode": "4700-240",
+    "lat": 41.5454,
+    "lng": -8.4265,
+    "phone": "+351 25 326 1100",
+    "email": "contacto@norteenergia.pt",
+    "website": "https://www.norteenergia.pt",
+    "hours": {
+      "mon": "09:00-19:00",
+      "tue": "09:00-19:00",
+      "wed": "09:00-19:00",
+      "thu": "09:00-19:00",
+      "fri": "09:00-18:30",
+      "sat": "09:30-13:00",
+      "sun": "Fechado"
+    },
+    "storeType": "loja",
+    "active": true
+  },
+  {
+    "id": "pt-aveiro-atlanticmob",
+    "name": "Atlantic Mobility Aveiro",
+    "slug": "atlantic-mobility-aveiro",
+    "image": "https://images.unsplash.com/photo-1571058884539-7c6f5e049bde?w=200&h=200&fit=crop&auto=format&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=500&fit=crop&auto=format&q=80"
+    ],
+    "countryCode": "PT",
+    "countryName": "Portugal",
+    "region": "Aveiro",
+    "city": "Aveiro",
+    "address": "Rua João Mendonça 8, 3800-200 Aveiro",
+    "postcode": "3800-200",
+    "lat": 40.6443,
+    "lng": -8.6455,
+    "phone": "+351 23 421 7750",
+    "email": "info@atlanticmobility.pt",
+    "website": "https://www.atlanticmobility.pt",
+    "hours": {
+      "mon": "09:00-18:00",
+      "tue": "09:00-18:00",
+      "wed": "Fechado",
+      "thu": "09:00-18:00",
+      "fri": "09:00-18:00",
+      "sat": "10:00-14:00",
+      "sun": "Fechado"
+    },
+    "storeType": "quiosque",
+    "active": true
+  },
+  {
+    "id": "pt-coimbra-coimbraeletric",
+    "name": "CoimbraElétric",
+    "slug": "coimbraeletric-coimbra",
+    "image": "https://images.unsplash.com/photo-1544191696-102dbdaeeaa8?w=200&h=200&fit=crop&auto=format&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=500&fit=crop&auto=format&q=80",
+      "https://images.unsplash.com/photo-1555529771-7888783a18d3?w=800&h=500&fit=crop&auto=format&q=80"
+    ],
+    "countryCode": "PT",
+    "countryName": "Portugal",
+    "region": "Coimbra",
+    "city": "Coimbra",
+    "address": "Rua Ferreira Borges 44, 3000-175 Coimbra",
+    "postcode": "3000-175",
+    "lat": 40.2033,
+    "lng": -8.4103,
+    "phone": "+351 23 982 6300",
+    "email": "geral@coimbraeletric.pt",
+    "website": "https://www.coimbraeletric.pt",
+    "hours": {
+      "mon": "09:00-18:00",
+      "tue": "09:00-18:00",
+      "wed": "09:00-18:00",
+      "thu": "09:00-18:00",
+      "fri": "09:00-17:30",
+      "sat": "Fechado",
+      "sun": "Fechado"
+    },
+    "storeType": "eletronica",
+    "active": true
+  },
+  {
+    "id": "pt-faro-algarvemob",
+    "name": "AlgarveMob Faro",
+    "slug": "algarvemob-faro",
+    "image": "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=200&h=200&fit=crop&auto=format&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=500&fit=crop&auto=format&q=80"
+    ],
+    "countryCode": "PT",
+    "countryName": "Portugal",
+    "region": "Faro",
+    "city": "Faro",
+    "address": "Rua de Santo António 62, 8000-284 Faro",
+    "postcode": "8000-284",
+    "lat": 37.0194,
+    "lng": -7.9304,
+    "phone": "+351 28 982 0440",
+    "email": "info@algarvemob.pt",
+    "website": "https://www.algarvemob.pt",
+    "hours": {
+      "mon": "09:00-18:00",
+      "tue": "09:00-18:00",
+      "wed": "09:00-18:00",
+      "thu": "09:00-18:00",
+      "fri": "09:00-18:00",
+      "sat": "10:00-14:00",
+      "sun": "Fechado"
+    },
+    "storeType": "tabacaria",
+    "active": true
+  },
+  {
+    "id": "pt-leiria-centrovolt",
+    "name": "CentroVolt Leiria",
+    "slug": "centrovolt-leiria",
+    "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=200&h=200&fit=crop&auto=format&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=800&h=500&fit=crop&auto=format&q=80",
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=500&fit=crop&auto=format&q=80"
+    ],
+    "countryCode": "PT",
+    "countryName": "Portugal",
+    "region": "Leiria",
+    "city": "Leiria",
+    "address": "Rua Barão de Viamonte 15, 2400-127 Leiria",
+    "postcode": "2400-127",
+    "lat": 39.7436,
+    "lng": -8.8071,
+    "phone": "+351 24 483 5120",
+    "email": "contacto@centrovolt.pt",
+    "website": "https://www.centrovolt.pt",
+    "hours": {
+      "mon": "09:00-18:30",
+      "tue": "09:00-18:30",
+      "wed": "09:00-18:30",
+      "thu": "09:00-18:30",
+      "fri": "09:00-18:00",
+      "sat": "Fechado",
+      "sun": "Fechado"
+    },
+    "storeType": "papelaria",
+    "active": true
+  },
+  {
+    "id": "pt-viseu-viseutech",
+    "name": "ViseuTech Mobilidade",
+    "slug": "viseutech-viseu",
+    "image": "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=200&h=200&fit=crop&auto=format&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=500&fit=crop&auto=format&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&auto=format&q=80"
+    ],
+    "countryCode": "PT",
+    "countryName": "Portugal",
+    "region": "Viseu",
+    "city": "Viseu",
+    "address": "Rua Augusto Hilário 30, 3500-035 Viseu",
+    "postcode": "3500-035",
+    "lat": 40.6566,
+    "lng": -7.9122,
+    "phone": "+351 23 241 8890",
+    "email": "geral@viseutech.pt",
+    "website": "https://www.viseutech.pt",
+    "hours": {
+      "mon": "09:00-18:00",
+      "tue": "09:00-18:00",
+      "wed": "09:00-18:00",
+      "thu": "09:00-18:00",
+      "fri": "09:00-17:00",
+      "sat": "10:00-13:00",
+      "sun": "Fechado"
+    },
+    "storeType": "loja",
+    "active": true
+  },
+  {
+    "id": "pt-setubal-setubalmob",
+    "name": "SetúbalMob",
+    "slug": "setubalmob-setubal",
+    "image": "https://images.unsplash.com/photo-1619441207978-3d326c46e2c9?w=200&h=200&fit=crop&auto=format&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=500&fit=crop&auto=format&q=80"
+    ],
+    "countryCode": "PT",
+    "countryName": "Portugal",
+    "region": "Setúbal",
+    "city": "Setúbal",
+    "address": "Avenida Luísa Todi 245, 2900-457 Setúbal",
+    "postcode": "2900-457",
+    "lat": 38.5244,
+    "lng": -8.8882,
+    "phone": "+351 26 553 7700",
+    "email": "info@setubalmob.pt",
+    "website": "https://www.setubalmob.pt",
+    "hours": {
+      "mon": "09:00-18:00",
+      "tue": "09:00-18:00",
+      "wed": "09:00-18:00",
+      "thu": "09:00-18:00",
+      "fri": "09:00-18:00",
+      "sat": "Fechado",
+      "sun": "Fechado"
+    },
+    "storeType": "mercearia",
+    "active": true
+  },
+  {
+    "id": "pt-guimaraes-guimaraespower",
+    "name": "GuimarãesPower",
+    "slug": "guimaraespower-guimaraes",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&h=200&fit=crop&auto=format&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=500&fit=crop&auto=format&q=80",
+      "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=800&h=500&fit=crop&auto=format&q=80"
+    ],
+    "countryCode": "PT",
+    "countryName": "Portugal",
+    "region": "Guimarães",
+    "city": "Guimarães",
+    "address": "Rua de Santo António 78, 4800-024 Guimarães",
+    "postcode": "4800-024",
+    "lat": 41.4425,
+    "lng": -8.2962,
+    "phone": "+351 25 351 2200",
+    "email": "contacto@guimaraespower.pt",
+    "website": "https://www.guimaraespower.pt",
+    "hours": {
+      "mon": "09:00-18:00",
+      "tue": "09:00-18:00",
+      "wed": "09:00-18:00",
+      "thu": "09:00-18:00",
+      "fri": "09:00-17:30",
+      "sat": "09:30-12:30",
+      "sun": "Fechado"
+    },
+    "storeType": "loja",
+    "active": true
+  }
+]

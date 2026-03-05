@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet overrides — import in Map component dynamically */
+@layer base {
+  :root {
+    --evolt-green: #F9A138;
+    --evolt-green-dark: #E07B0F;
+    --evolt-navy: #1A1A1A;
+    --evolt-slate: #475569;
+    --evolt-muted: #94A3B8;
+    --evolt-border: #E2E8F0;
+    --evolt-surface: #F8FAFC;
+  }
+
+  html {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Custom scrollbar for the list panel */
+  .reseller-scroll::-webkit-scrollbar {
+    width: 4px;
+  }
+  .reseller-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .reseller-scroll::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 2px;
+  }
+  .reseller-scroll::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+  }
+}
+
+@layer components {
+  /* Leaflet popup styling */
+  .leaflet-popup-content-wrapper {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 24px rgba(26,26,26,0.15) !important;
+    border: 1px solid #E2E8F0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+  .leaflet-popup-content {
+    margin: 0 !important;
+    width: auto !important;
+  }
+  .leaflet-popup-tip-container {
+    display: none;
+  }
+  .leaflet-container {
+    font-family: 'Inter', sans-serif;
+  }
+  /* Custom marker icon */
+  .evolt-marker {
+    width: 32px;
+    height: 32px;
+    background: var(--evolt-green);
+    border: 3px solid white;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    box-shadow: 0 2px 8px rgba(249,161,56,0.45);
+    cursor: pointer;
+  }
+  .evolt-marker.selected {
+    background: var(--evolt-navy);
+    box-shadow: 0 2px 12px rgba(26,26,26,0.50);
+  }
+  .evolt-marker-label {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Inter', sans-serif;
+  }
+}
