@@ -2,6 +2,7 @@ import resellersData from '@/data/resellers.json'
 import type { Reseller, ResellerWithDistance, FilterState } from './types'
 import { haversineDistance } from './haversine'
 import type { GeoLocation } from './types'
+import { getOpenStatus } from './openStatus'
 
 export const allResellers: Reseller[] = resellersData as Reseller[]
 
@@ -17,6 +18,10 @@ export function filterResellers(
     if (filters.country && r.countryCode !== filters.country) return false
 
     if (filters.storeType && r.storeType !== filters.storeType) return false
+
+    if (filters.openNow && !getOpenStatus(r.hours).isOpen) return false
+
+    if (filters.openOn && r.hours[filters.openOn] === 'Fechado') return false
 
     if (q) {
       const haystack = [r.name, r.city, r.address, r.region, r.postcode]

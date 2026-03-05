@@ -29,6 +29,8 @@ const DEFAULT_FILTERS: FilterState = {
   query: '',
   country: 'PT',
   storeType: '',
+  openNow: false,
+  openOn: '',
 }
 
 export function ResellerLocator({ resellers }: ResellerLocatorProps) {

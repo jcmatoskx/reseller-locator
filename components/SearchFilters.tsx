@@ -2,7 +2,7 @@
 
 import { useState, useRef, useCallback } from 'react'
 import type { StoreType, FilterState } from '@/lib/types'
-import { STORE_TYPE_LABELS, ALL_STORE_TYPES } from '@/lib/types'
+import { STORE_TYPE_LABELS, ALL_STORE_TYPES, DAY_SHORT_LABELS, ALL_DAYS } from '@/lib/types'
 
 interface SearchFiltersProps {
   filters: FilterState
@@ -51,7 +51,7 @@ export function SearchFilters({
     }
   }
 
-  const hasActiveFilters = filters.storeType !== '' || locationLabel
+  const hasActiveFilters = filters.storeType !== '' || filters.openNow || filters.openOn !== '' || locationLabel
 
   return (
     <div className="flex-shrink-0 bg-white border-b border-evolt-border">
@@ -200,6 +200,63 @@ export function SearchFilters({
               {filters.storeType !== '' && (
                 <button
                   onClick={() => onFiltersChange({ storeType: '' })}
+                  className="px-3 py-1.5 rounded-full text-[11px] font-semibold text-evolt-muted hover:text-evolt-slate transition-colors focus-visible:outline-none"
+                >
+                  Clear
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* Availability filter */}
+          <div>
+            <label className="text-[11px] font-semibold text-evolt-muted uppercase tracking-wider block mb-2">
+              Availability
+            </label>
+            <div className="flex flex-wrap gap-1.5">
+              {/* Open now toggle */}
+              <button
+                onClick={() => onFiltersChange({ openNow: !filters.openNow, openOn: filters.openNow ? filters.openOn : '' })}
+                className={`
+                  inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold
+                  border transition-all duration-150
+                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-evolt-green
+                  ${filters.openNow
+                    ? 'bg-evolt-green text-white border-evolt-green'
+                    : 'bg-white text-evolt-slate border-evolt-border hover:border-evolt-slate'}
+                `}
+                aria-pressed={filters.openNow}
+              >
+                <span className={`w-1.5 h-1.5 rounded-full ${filters.openNow ? 'bg-white' : 'bg-evolt-green'}`} />
+                Open now
+              </button>
+            </div>
+
+            {/* Open on day */}
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {ALL_DAYS.map((day) => {
+                const active = filters.openOn === day
+                return (
+                  <button
+                    key={day}
+                    onClick={() => onFiltersChange({ openOn: active ? '' : day, openNow: false })}
+                    className={`
+                      px-3 py-1.5 rounded-full text-[11px] font-semibold
+                      border transition-all duration-150
+                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-evolt-green
+                      ${active
+                        ? 'bg-evolt-navy text-white border-evolt-navy'
+                        : 'bg-white text-evolt-slate border-evolt-border hover:border-evolt-slate'}
+                    `}
+                    aria-pressed={active}
+                  >
+                    {DAY_SHORT_LABELS[day]}
+                  </button>
+                )
+              })}
+              {filters.openOn !== '' && (
+                <button
+                  onClick={() => onFiltersChange({ openOn: '' })}
                   className="px-3 py-1.5 rounded-full text-[11px] font-semibold text-evolt-muted hover:text-evolt-slate transition-colors focus-visible:outline-none"
                 >
                   Clear

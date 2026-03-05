@@ -46,6 +46,8 @@ export interface FilterState {
   query: string
   country: string
   storeType: StoreType | ''
+  openNow: boolean
+  openOn: keyof ResellerHours | ''
 }
 
 export const STORE_TYPE_LABELS: Record<StoreType, string> = {
@@ -84,6 +86,20 @@ export const DAY_LABELS: Record<keyof ResellerHours, string> = {
   sat: 'Saturday',
   sun: 'Sunday',
 }
+
+export const DAY_SHORT_LABELS: Record<keyof ResellerHours, string> = {
+  mon: 'Mon',
+  tue: 'Tue',
+  wed: 'Wed',
+  thu: 'Thu',
+  fri: 'Fri',
+  sat: 'Sat',
+  sun: 'Sun',
+}
+
+export const ALL_DAYS: (keyof ResellerHours)[] = [
+  'mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun',
+]
 
 export const ALL_STORE_TYPES: StoreType[] = [
   'loja', 'eletronica', 'quiosque', 'tabacaria', 'papelaria', 'mercearia',
