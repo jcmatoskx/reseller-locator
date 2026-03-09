@@ -86,30 +86,23 @@ export function ResellerCard({ reseller: r, selected, onClick }: ResellerCardPro
 
       {/* Action buttons */}
       <div className="flex items-center gap-2 pl-[56px]">
-        {r.website && (
-          <a
-            href={r.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="
-              inline-flex items-center gap-1.5 px-3 py-1.5
-              text-[11px] font-semibold text-evolt-slate
-              bg-evolt-surface border border-evolt-border rounded-lg
-              hover:bg-evolt-border hover:text-evolt-navy
-              transition-colors duration-150
-              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-evolt-green
-            "
-            aria-label={`Visit ${r.name} website`}
-          >
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <line x1="2" y1="12" x2="22" y2="12"/>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-            </svg>
-            Website
-          </a>
-        )}
+        <a
+          href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/r/${r.slug}`}
+          onClick={(e) => e.stopPropagation()}
+          className="
+            inline-flex items-center justify-center w-8 h-8
+            text-evolt-slate
+            bg-evolt-surface border border-evolt-border rounded-lg
+            hover:bg-evolt-border hover:text-evolt-navy
+            transition-colors duration-150
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-evolt-green
+          "
+          aria-label={`View details for ${r.name}`}
+        >
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </a>
         <a
           href={directionsUrl}
           target="_blank"
