@@ -65,7 +65,7 @@ export function SearchFilters({
             </svg>
           </div>
           <span className="font-display font-bold text-sm text-evolt-navy hidden sm:block">
-            Localizador de Revendedores
+            Revendedores Evolt
           </span>
         </div>
 
