@@ -59,7 +59,7 @@ export function Map({ resellers, selectedId, onSelectReseller }: MapProps) {
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
     const detailUrl = `${basePath}/r/${r.slug}`
     const status = getOpenStatus(r.hours)
-    const statusColor = status.isOpen ? '#F9A138' : '#94A3B8'
+    const statusColor = status.isOpen ? '#10b981' : '#94A3B8'
     const todayHours = r.hours[status.todayKey]
     return `
       <div style="font-family:'DM Sans',sans-serif;padding:16px;min-width:220px;max-width:280px;">
