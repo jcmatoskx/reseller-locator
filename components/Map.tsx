@@ -33,7 +33,6 @@ export function Map({ resellers, selectedId, onSelectReseller }: MapProps) {
         <div style="
           width:36px;height:36px;
           background:${selected ? '#1A1A1A' : '#F9A138'};
-          border:3px solid white;
           border-radius:50% 50% 50% 0;
           transform:rotate(-45deg);
           box-shadow:0 2px 10px rgba(${selected ? '26,26,26' : '249,161,56'},0.45);
