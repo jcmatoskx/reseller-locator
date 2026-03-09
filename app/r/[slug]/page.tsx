@@ -22,10 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!r) return {}
 
   return {
-    title: `${r.name} — Revendedor Evolt em ${r.city}`,
+    title: `${r.name} — Revendedores Evolt`,
     description: `Encontre ${r.name} em ${r.address}. Revendedor oficial Evolt de mobilidade elétrica — ${STORE_TYPE_LABELS[r.storeType]} em ${r.city}.`,
     openGraph: {
-      title: `${r.name} — Revendedor Evolt`,
+      title: `${r.name} — Revendedores Evolt`,
       description: `${r.address} · ${r.phone}`,
       type: 'website',
     },
