@@ -31,7 +31,7 @@ export function HoursTable({ hours }: { hours: ResellerHours }) {
               {DAY_LABELS[day]}
               {isToday && (
                 <span className="ml-1.5 text-[10px] font-bold text-evolt-green uppercase tracking-wide">
-                  Today
+                  Hoje
                 </span>
               )}
             </span>

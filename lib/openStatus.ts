@@ -2,7 +2,7 @@ import type { ResellerHours } from './types'
 
 export interface OpenStatus {
   isOpen: boolean
-  /** Short display label e.g. "Open · Closes at 18:00" */
+  /** Short display label e.g. "Aberto · Fecha às 18:00" */
   label: string
   /** Key of today in the hours object */
   todayKey: keyof ResellerHours
@@ -13,8 +13,8 @@ type DayKey = keyof ResellerHours
 const DAY_ORDER: DayKey[] = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
 
 const SHORT_LABELS: Record<DayKey, string> = {
-  mon: 'Mon', tue: 'Tue', wed: 'Wed',
-  thu: 'Thu', fri: 'Fri', sat: 'Sat', sun: 'Sun',
+  mon: 'Seg', tue: 'Ter', wed: 'Qua',
+  thu: 'Qui', fri: 'Sex', sat: 'Sáb', sun: 'Dom',
 }
 
 /** Locale weekday index → DayKey (0=Sun in JS Date, but we use Intl below) */
@@ -30,7 +30,7 @@ function getNextOpenInfo(hours: ResellerHours, fromKey: DayKey): string | null {
     const h = hours[key]
     if (h !== 'Fechado') {
       const [open] = h.split('-')
-      const label = i === 1 ? `Tomorrow at ${open}` : `${SHORT_LABELS[key]} at ${open}`
+      const label = i === 1 ? `Amanhã às ${open}` : `${SHORT_LABELS[key]} às ${open}`
       return label
     }
   }
@@ -69,7 +69,7 @@ export function getOpenStatus(hours: ResellerHours, now?: Date): OpenStatus {
     const next = getNextOpenInfo(hours, todayKey)
     return {
       isOpen: false,
-      label: next ? `Closed · Opens ${next}` : 'Closed today',
+      label: next ? `Fechado · Abre ${next}` : 'Fechado hoje',
       todayKey,
     }
   }
@@ -79,18 +79,18 @@ export function getOpenStatus(hours: ResellerHours, now?: Date): OpenStatus {
   const closeMins = parseMinutes(closeStr)
 
   if (currentMins >= openMins && currentMins < closeMins) {
-    return { isOpen: true, label: `Open · Closes at ${closeStr}`, todayKey }
+    return { isOpen: true, label: `Aberto · Fecha às ${closeStr}`, todayKey }
   }
 
   if (currentMins < openMins) {
-    return { isOpen: false, label: `Closed · Opens at ${openStr}`, todayKey }
+    return { isOpen: false, label: `Fechado · Abre às ${openStr}`, todayKey }
   }
 
   // Past closing time — find next open slot
   const next = getNextOpenInfo(hours, todayKey)
   return {
     isOpen: false,
-    label: next ? `Closed · Opens ${next}` : 'Closed for today',
+    label: next ? `Fechado · Abre ${next}` : 'Fechado por hoje',
     todayKey,
   }
 }

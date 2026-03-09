@@ -15,7 +15,7 @@ const Map = dynamic(() => import('./Map').then((m) => ({ default: m.Map })), {
     <div className="w-full h-full flex items-center justify-center bg-evolt-surface">
       <div className="flex flex-col items-center gap-3">
         <div className="w-10 h-10 rounded-full border-2 border-evolt-green border-t-transparent animate-spin" />
-        <p className="text-sm text-evolt-muted font-medium">Loading map…</p>
+        <p className="text-sm text-evolt-muted font-medium">A carregar mapa…</p>
       </div>
     </div>
   ),
@@ -124,7 +124,7 @@ export function ResellerLocator({ resellers }: ResellerLocatorProps) {
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
                 </svg>
-                Map
+                Mapa
               </span>
             ) : (
               <span className="flex items-center justify-center gap-1.5">
@@ -132,7 +132,7 @@ export function ResellerLocator({ resellers }: ResellerLocatorProps) {
                   <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
                   <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
                 </svg>
-                List ({filteredResellers.length})
+                Lista ({filteredResellers.length})
               </span>
             )}
           </button>

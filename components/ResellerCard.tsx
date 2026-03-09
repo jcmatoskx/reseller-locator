@@ -97,7 +97,7 @@ export function ResellerCard({ reseller: r, selected, onClick }: ResellerCardPro
             transition-colors duration-150
             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-evolt-green
           "
-          aria-label={`View details for ${r.name}`}
+          aria-label={`Ver detalhes de ${r.name}`}
         >
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
@@ -116,12 +116,12 @@ export function ResellerCard({ reseller: r, selected, onClick }: ResellerCardPro
             transition-colors duration-150
             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-evolt-green
           "
-          aria-label={`Get directions to ${r.name}`}
+          aria-label={`Obter direções para ${r.name}`}
         >
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <polygon points="3 11 22 2 13 21 11 13 3 11"/>
           </svg>
-          Directions
+          Direções
         </a>
       </div>
     </button>

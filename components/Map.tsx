@@ -77,7 +77,7 @@ export function Map({ resellers, selectedId, onSelectReseller }: MapProps) {
         </div>
         ${distance ? `
           <div style="font-size:11px;font-weight:600;color:#F9A138;margin-bottom:12px;">
-            ${distance} away
+            ${distance} de distância
           </div>
         ` : ''}
         <div style="display:flex;gap:6px;">
@@ -95,7 +95,7 @@ export function Map({ resellers, selectedId, onSelectReseller }: MapProps) {
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
             </svg>
-            View Details
+            Ver Detalhes
           </a>
           <a href="${mapsUrl}" target="_blank" rel="noopener noreferrer"
             style="
@@ -111,7 +111,7 @@ export function Map({ resellers, selectedId, onSelectReseller }: MapProps) {
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="3 11 22 2 13 21 11 13 3 11"/>
             </svg>
-            Directions
+            Direções
           </a>
         </div>
       </div>
@@ -264,7 +264,7 @@ export function Map({ resellers, selectedId, onSelectReseller }: MapProps) {
       ref={containerRef}
       className="w-full h-full"
       style={{ minHeight: 300 }}
-      aria-label="Reseller map"
+      aria-label="Mapa de revendedores"
     />
   )
 }

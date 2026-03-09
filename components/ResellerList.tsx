@@ -30,8 +30,8 @@ export function ResellerList({ resellers, selectedId, onSelectReseller }: Resell
             <line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
         </div>
-        <p className="font-display font-semibold text-sm text-evolt-slate">No resellers found</p>
-        <p className="text-xs text-evolt-muted">Try adjusting your search or filters</p>
+        <p className="font-display font-semibold text-sm text-evolt-slate">Nenhum revendedor encontrado</p>
+        <p className="text-xs text-evolt-muted">Tente ajustar a pesquisa ou os filtros</p>
       </div>
     )
   }
@@ -41,12 +41,12 @@ export function ResellerList({ resellers, selectedId, onSelectReseller }: Resell
       ref={listRef}
       className="h-full overflow-y-auto reseller-scroll"
       role="list"
-      aria-label="Resellers list"
+      aria-label="Lista de revendedores"
     >
       {/* Result count header */}
       <div className="sticky top-0 z-10 px-4 py-2.5 bg-white/90 backdrop-blur-sm border-b border-evolt-border">
         <p className="text-xs font-semibold text-evolt-muted">
-          {resellers.length} {resellers.length === 1 ? 'reseller' : 'resellers'} found
+          {resellers.length} {resellers.length === 1 ? 'revendedor encontrado' : 'revendedores encontrados'}
         </p>
       </div>
 

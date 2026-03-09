@@ -78,23 +78,23 @@ export const STORE_TYPE_COLORS: Record<StoreType, string> = {
 }
 
 export const DAY_LABELS: Record<keyof ResellerHours, string> = {
-  mon: 'Monday',
-  tue: 'Tuesday',
-  wed: 'Wednesday',
-  thu: 'Thursday',
-  fri: 'Friday',
-  sat: 'Saturday',
-  sun: 'Sunday',
+  mon: 'Segunda-feira',
+  tue: 'Terça-feira',
+  wed: 'Quarta-feira',
+  thu: 'Quinta-feira',
+  fri: 'Sexta-feira',
+  sat: 'Sábado',
+  sun: 'Domingo',
 }
 
 export const DAY_SHORT_LABELS: Record<keyof ResellerHours, string> = {
-  mon: 'Mon',
-  tue: 'Tue',
-  wed: 'Wed',
-  thu: 'Thu',
-  fri: 'Fri',
-  sat: 'Sat',
-  sun: 'Sun',
+  mon: 'Seg',
+  tue: 'Ter',
+  wed: 'Qua',
+  thu: 'Qui',
+  fri: 'Sex',
+  sat: 'Sáb',
+  sun: 'Dom',
 }
 
 export const ALL_DAYS: (keyof ResellerHours)[] = [

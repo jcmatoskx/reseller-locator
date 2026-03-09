@@ -22,10 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!r) return {}
 
   return {
-    title: `${r.name} — Evolt Reseller in ${r.city}`,
-    description: `Find ${r.name} at ${r.address}. Official Evolt electric mobility reseller — ${STORE_TYPE_LABELS[r.storeType]} in ${r.city}.`,
+    title: `${r.name} — Revendedor Evolt em ${r.city}`,
+    description: `Encontre ${r.name} em ${r.address}. Revendedor oficial Evolt de mobilidade elétrica — ${STORE_TYPE_LABELS[r.storeType]} em ${r.city}.`,
     openGraph: {
-      title: `${r.name} — Evolt Reseller`,
+      title: `${r.name} — Revendedor Evolt`,
       description: `${r.address} · ${r.phone}`,
       type: 'website',
     },
@@ -92,7 +92,7 @@ export default async function ResellerDetailPage({ params }: Props) {
             <Link
               href="/embed"
               className="flex items-center gap-2 text-evolt-muted hover:text-evolt-navy transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-evolt-green rounded-lg p-1"
-              aria-label="Back to reseller locator"
+              aria-label="Voltar ao localizador de revendedores"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M19 12H5M12 19l-7-7 7-7"/>
@@ -167,7 +167,7 @@ export default async function ResellerDetailPage({ params }: Props) {
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <polygon points="3 11 22 2 13 21 11 13 3 11"/>
                   </svg>
-                  Get Directions
+                  Como Chegar
                 </a>
               </div>
 
@@ -197,7 +197,7 @@ export default async function ResellerDetailPage({ params }: Props) {
               {/* Hours */}
               <div className="bg-white rounded-2xl border border-evolt-border p-6 shadow-card">
                 <div className="flex items-center justify-between mb-4">
-                  <h2 className="font-display font-bold text-sm text-evolt-navy">Opening Hours</h2>
+                  <h2 className="font-display font-bold text-sm text-evolt-navy">Horário</h2>
                   <OpenStatusBadge hours={r.hours} size="md" />
                 </div>
                 <HoursTable hours={r.hours} />

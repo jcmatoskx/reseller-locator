@@ -26,7 +26,7 @@ export function OpenStatusBadge({ hours, size = 'sm' }: OpenStatusBadgeProps) {
           w-1.5 h-1.5 rounded-full
           ${status.isOpen ? 'bg-emerald-500 animate-pulse' : 'bg-slate-400'}
         `} />
-        {status.isOpen ? 'Open' : 'Closed'}
+        {status.isOpen ? 'Aberto' : 'Fechado'}
       </span>
     )
   }

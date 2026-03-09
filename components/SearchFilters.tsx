@@ -65,7 +65,7 @@ export function SearchFilters({
             </svg>
           </div>
           <span className="font-display font-bold text-sm text-evolt-navy hidden sm:block">
-            Reseller Locator
+            Localizador de Revendedores
           </span>
         </div>
 
@@ -78,7 +78,7 @@ export function SearchFilters({
           </div>
           <input
             type="search"
-            placeholder="Search by name, city, address…"
+            placeholder="Pesquisar por nome, cidade, morada…"
             value={searchInput}
             onChange={(e) => handleSearchChange(e.target.value)}
             className="
@@ -88,7 +88,7 @@ export function SearchFilters({
               focus:outline-none focus:ring-2 focus:ring-evolt-green focus:border-transparent
               transition-all duration-150
             "
-            aria-label="Search resellers"
+            aria-label="Pesquisar revendedores"
           />
         </div>
 
@@ -104,14 +104,14 @@ export function SearchFilters({
               : 'bg-white text-evolt-slate border-evolt-border hover:bg-evolt-surface'}
           `}
           aria-expanded={showFilters}
-          aria-label="Toggle filters"
+          aria-label="Alternar filtros"
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <line x1="4" y1="6" x2="20" y2="6"/>
             <line x1="8" y1="12" x2="16" y2="12"/>
             <line x1="11" y1="18" x2="13" y2="18"/>
           </svg>
-          <span className="hidden sm:inline">Filters</span>
+          <span className="hidden sm:inline">Filtros</span>
           {hasActiveFilters && (
             <span className="w-1.5 h-1.5 bg-evolt-green rounded-full inline-block" />
           )}
@@ -131,7 +131,7 @@ export function SearchFilters({
               </div>
               <input
                 type="text"
-                placeholder={locationLabel ?? 'Search near a location…'}
+                placeholder={locationLabel ?? 'Pesquisar perto de uma localização…'}
                 value={locationInput}
                 onChange={(e) => handleLocationChange(e.target.value)}
                 onKeyDown={handleLocationKeyDown}
@@ -142,7 +142,7 @@ export function SearchFilters({
                   focus:outline-none focus:ring-2 focus:ring-evolt-green focus:border-transparent
                   transition-all duration-150
                 "
-                aria-label="Search near location"
+                aria-label="Pesquisar perto de uma localização"
               />
             </div>
             <button
@@ -156,7 +156,7 @@ export function SearchFilters({
                 transition-all duration-150
                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-evolt-green
               "
-              aria-label="Use my current location"
+              aria-label="Usar a minha localização atual"
             >
               {isGeolocating ? (
                 <svg className="animate-spin" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -167,14 +167,14 @@ export function SearchFilters({
                   <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
                 </svg>
               )}
-              Near me
+              Perto de mim
             </button>
           </div>
 
           {/* Store type filter */}
           <div>
             <label className="text-[11px] font-semibold text-evolt-muted uppercase tracking-wider block mb-2">
-              Store Type
+              Tipo de Loja
             </label>
             <div className="flex flex-wrap gap-1.5">
               {ALL_STORE_TYPES.map((type) => {
@@ -202,7 +202,7 @@ export function SearchFilters({
                   onClick={() => onFiltersChange({ storeType: '' })}
                   className="px-3 py-1.5 rounded-full text-[11px] font-semibold text-evolt-muted hover:text-evolt-slate transition-colors focus-visible:outline-none"
                 >
-                  Clear
+                  Limpar
                 </button>
               )}
             </div>
@@ -211,7 +211,7 @@ export function SearchFilters({
           {/* Availability filter */}
           <div>
             <label className="text-[11px] font-semibold text-evolt-muted uppercase tracking-wider block mb-2">
-              Availability
+              Disponibilidade
             </label>
             <div className="flex flex-wrap gap-1.5">
               {/* Open now toggle */}
@@ -228,7 +228,7 @@ export function SearchFilters({
                 aria-pressed={filters.openNow}
               >
                 <span className={`w-1.5 h-1.5 rounded-full ${filters.openNow ? 'bg-white' : 'bg-evolt-green'}`} />
-                Open now
+                Aberto agora
               </button>
             </div>
 
@@ -259,7 +259,7 @@ export function SearchFilters({
                   onClick={() => onFiltersChange({ openOn: '' })}
                   className="px-3 py-1.5 rounded-full text-[11px] font-semibold text-evolt-muted hover:text-evolt-slate transition-colors focus-visible:outline-none"
                 >
-                  Clear
+                  Limpar
                 </button>
               )}
             </div>
@@ -274,7 +274,7 @@ export function SearchFilters({
             <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
             </svg>
-            Sorted by distance
+            Ordenado por distância
           </div>
         </div>
       )}

@@ -9,8 +9,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Evolt Reseller Locator',
-  description: 'Find your nearest Evolt electric mobility reseller in Portugal.',
+  title: 'Localizador de Revendedores Evolt',
+  description: 'Encontre o revendedor Evolt de mobilidade elétrica mais próximo em Portugal.',
   robots: { index: true, follow: true },
 }
 
